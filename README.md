@@ -61,12 +61,33 @@ Icer＝愛 × Ice（氷) × Answer（解凍）× I see
 それぞれのスキルを活かし役割分担をし効率的に仕事を成し遂げた。  
 
 #### 開発技術
+短期間での開発のため、できる限り慣れているものや学習コストの低い言語を選択した。  
+また、SQLなどのデータベース操作には、phpMyAdminなどのGUIツールを使うことで、プログラミングが苦手な人も、データベースに触れるようにした。
 利用したプログラミング言語  
-...
+フロントエンド:Typescript  
+バックエンド:Python,SQL  
+など  
 
 #### 利用したフレームワーク・ライブラリ
-![image](https://github.com/p2hacks2023/pre-10/assets/49752462/e7e512c0-982b-408b-9a3a-43ec09e19267)
+![image](https://github.com/p2hacks2023/pre-10/assets/49752462/e7e512c0-982b-408b-9a3a-43ec09e19267)  
+
+バックエンド:FastAPI  
+フロントエンド:React,Next.js,Material UI,three.js(react-three-fiber)  
+
+バックエンド側では、PythonでAPIを設計できるFastAPIを採用した。  
+
+フロントエンド側では、メインのフレームワークとしてNext.jsを使用した。  
+また、短期間で質の高いUIを完成させるために、UIフレームワークである、Material UIを採用。
+
+
 
 ...
 
 #### その他開発に使用したツール・サービス ...
+- Figma
+プロトタイプの作成や、デザイン関連の打ち合わせ時に使用した。
+- Cloudflare Pages
+フロントエンドのNext.jsのデプロイ先として利用した。
+- Conoha VPS
+データベースやAPIのデプロイ先として利用した。
+
