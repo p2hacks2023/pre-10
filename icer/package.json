@@ -1,0 +1,38 @@
+{
+  "name": "hack-demo-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
+    "@react-three/drei": "^9.92.1",
+    "@react-three/fiber": "^8.15.12",
+    "@react-three/postprocessing": "^2.15.11",
+    "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
+    "next": "14.0.4",
+    "next-pwa": "^5.6.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "recoil": "^0.7.7",
+    "three": "^0.159.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/three": "^0.139.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
+  }
+}
