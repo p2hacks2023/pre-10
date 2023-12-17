@@ -79,7 +79,9 @@ Icer
 フロントエンド：React,Next.js,Material UI,three.js(react-three-fiber)  
 バックエンド側では、PythonでAPIを設計できるFastAPIを採用した。  
 フロントエンド側では、メインのフレームワークとしてNext.jsを使用した。  
+
 また、短期間で質の高いUIを完成させるために、UIフレームワークである、Material UIを採用。  
+
 3D表現を実現するために、three.jsを使用。Reactで利用するため、react-three-fiberを使用した。 状態管理には、recoilを使用。  
 
 ### その他開発に使用したツール・サービス  
