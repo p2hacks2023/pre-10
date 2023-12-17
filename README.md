@@ -50,7 +50,7 @@ Icer
 **<ネーミングポイント>**  
 　Icer＝愛 × Ice（氷) × Answer（解凍）× I see   
 
-
+![image](https://github.com/p2hacks2023/pre-10/assets/49752462/841da892-0531-4d99-bde4-8454d3e3f93a)  
 
 ## 開発体制
 
@@ -73,7 +73,8 @@ Icer
 　など  
 
 ### 利用したフレームワーク・ライブラリ
-image  
+![image](https://github.com/p2hacks2023/pre-10/assets/49752462/f5d18533-61c2-47d0-966d-5443b55c5d2b)  
+
 バックエンド：FastAPI  
 フロントエンド：React,Next.js,Material UI,three.js(react-three-fiber)  
 バックエンド側では、PythonでAPIを設計できるFastAPIを採用した。  
