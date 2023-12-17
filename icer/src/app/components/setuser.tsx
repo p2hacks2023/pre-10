@@ -44,17 +44,16 @@ export default function FormDialog() {
     if (nameForm != "") {
       setErrorNull(false);
       const checkRequest = await checkUserName(nameForm);
+      console.log(checkRequest);
+
       if (checkRequest.status == "ok") {
         setUserName(nameForm);
         setDisplayUserName(checkRequest.userdata.display_username);
         setOpen(false);
         setOpenTips(true);
       } else {
-        const createRequest = await createUser(
-          nameForm,
-          String(displayUserName)
-        );
-        setUserName(nameForm);
+        const createRequest = await createUser(nameForm, "なし");
+        handleSubmit();
       }
     } else {
       setErrorNull(true);

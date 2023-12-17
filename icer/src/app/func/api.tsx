@@ -57,7 +57,7 @@ export function ApiAutoUpdate() {
 
 export async function checkUserName(userName: string) {
   const checkRequiest = await axios.post(
-    "https://p2-api.----------.com/user/check/",
+    "https://p2-api.flyanyfree.com/user/check/",
     {
       user_id: userName,
     }
@@ -67,7 +67,7 @@ export async function checkUserName(userName: string) {
 
 export async function createUser(userName: string, dusername: string) {
   const checkRequiest = await axios.post(
-    "https://p2-api.----------.com/user/create/",
+    "https://p2-api.flyanyfree.com/user/create/",
     {
       user_id: userName,
       display_username: dusername,
@@ -97,7 +97,7 @@ export async function getDiscussionItem(
   discussion_id: string
 ): Promise<formatGetDiscussionItem> {
   const getRequest = await axios.get(
-    `https://p2-api.----------.com/discussion/get/item/${discussion_id}`
+    `https://p2-api.flyanyfree.com/discussion/get/item/${discussion_id}`
   );
   return getRequest.data;
 }
@@ -106,7 +106,7 @@ export async function getDiscussionAll(
   parent_discussion_id: number
 ): Promise<formatGetDiscussionItem[]> {
   const getRequest = await axios.get(
-    `https://p2-api.----------.com/discussion/get/all/${parent_discussion_id}`
+    `https://p2-api.flyanyfree.com/discussion/get/all/${parent_discussion_id}`
   );
   return getRequest.data;
 }
@@ -114,7 +114,7 @@ export async function getDiscussionItemsRandom(
   offset: number
 ): Promise<formatGetDiscussionItem[]> {
   const getRequest = await axios.get(
-    `https://p2-api.----------.com/discussion/get/random/?offset=${offset}`
+    `https://p2-api.flyanyfree.com/discussion/get/random/?offset=${offset}`
   );
   return getRequest.data;
 }
@@ -123,7 +123,7 @@ export async function getDiscussionRandom(): Promise<
   formatGetDiscussionItem[]
 > {
   const getRequest = await axios.get(
-    `https://p2-api.----------.com/discussion/get/random_normal/`
+    `https://p2-api.flyanyfree.com/discussion/get/random_normal/`
   );
   return getRequest.data;
 }
@@ -136,7 +136,7 @@ export async function postCreateDiscussion(
   props: propsPostCreateDiscussion
 ): Promise<number> {
   const checkRequiest = await axios.post(
-    "https://p2-api.----------.com/discussion/post/parent",
+    "https://p2-api.flyanyfree.com/discussion/post/parent",
     {
       user_id: props.user_id,
       content: props.content,
@@ -157,7 +157,7 @@ export interface propsPostCreateChild {
 }
 export async function postCreateChild(props: propsPostCreateChild) {
   const checkRequiest = await axios.post(
-    "https://p2-api.----------.com/discussion/post/child",
+    "https://p2-api.flyanyfree.com/discussion/post/child",
     {
       user_id: props.user_id,
       parent_discussion_id: props.parent_discussion_id,
@@ -179,7 +179,7 @@ export interface propsPostUpIsee {
 }
 export async function postUpIsee(props: propsPostUpIsee) {
   const checkRequiest = await axios.post(
-    "https://p2-api.----------.com/discussion/post/up_isee",
+    "https://p2-api.flyanyfree.com/discussion/post/up_isee",
     {
       parent_discussion_id: props.parent_discussion_id,
       discussion_id: props.discussion_id,

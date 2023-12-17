@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea, CardMedia, Paper } from "@mui/material";
 import Image from "next/image";
 import { formatGetDiscussionItem } from "../func/api";
+import styles from "./question.module.css";
 
 export const QuestionCard = (props: {
   name: string;
@@ -20,92 +21,30 @@ export const QuestionCard = (props: {
     <>
       <Box
         component="div"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        sx={{ minWidth: 275, background: "rgba(255,255,255,0)" }}
+        display="fixed"
+        // justifyContent="center"
+        // alignItems="center"
+        sx={{
+          height: "500px",
+        }}
       >
-        {props.content !== null && props.content?.isee_level <= 1 && (
-          <Box
-            component="div"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            sx={{ maxWidth: 345 }}
-          >
-            <img
-              width="80%"
-              src="/pengin/pengin_1.png"
-              className="App-logo"
-              alt="logo"
-            />
-          </Box>
-        )}
-
-        {props.content !== null && props.content?.isee_level == 2 && (
-          <Box
-            component="div"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            sx={{ maxWidth: 345 }}
-          >
-            <img
-              width="80%"
-              src="/pengin/pengin_2.png"
-              className="App-logo"
-              alt="logo"
-            />
-          </Box>
-        )}
-        {props.content !== null && props.content?.isee_level == 3 && (
-          <Box
-            component="div"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            sx={{ maxWidth: 345 }}
-          >
-            <img
-              width="80%"
-              src="/pengin/pengin_3.png"
-              className="App-logo"
-              alt="logo"
-            />
-          </Box>
-        )}
-        {props.content !== null && props.content?.isee_level == 4 && (
-          <Box
-            component="div"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            sx={{ maxWidth: 345 }}
-          >
-            <img
-              width="80%"
-              src="/pengin/pengin_4.png"
-              className="App-logo"
-              alt="logo"
-            />
-          </Box>
-        )}
-        {props.content !== null && props.content?.isee_level == 5 && (
-          <Box
-            component="div"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            sx={{ maxWidth: 345 }}
-          >
-            <img
-              width="80%"
-              src="/pengin/pengin_5.png"
-              className="App-logo"
-              alt="logo"
-            />
-          </Box>
-        )}
+        {[0, 1, 2, 3, 4, 5].map((index) => {
+          const data = `/pengin/pen${index}.png`;
+          return (
+            <>
+              <img
+                className={`${styles["img-position"]} ${
+                  props.content !== null &&
+                  props.content?.isee_level != index &&
+                  styles["fadeIn"]
+                }`}
+                width="350px"
+                src={data}
+                alt="logo"
+              />
+            </>
+          );
+        })}
       </Box>
       <Box
         component="div"

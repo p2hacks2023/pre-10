@@ -6,7 +6,7 @@ import React from "react";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { AnimationMixer } from "three";
-import SendQuestionDialog from "./send-question-new";
+import SendQuestionDialog from "./send-question";
 import SendAnsQuesrion from "./send-ansquestion";
 import { RecoilRoot, useRecoilState } from "recoil";
 import FormDialog from "./setuser";
